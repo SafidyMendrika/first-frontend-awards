@@ -1,0 +1,159 @@
+.inscription-programme {
+  z-index: 99;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+  justify-content: center;
+
+  backdrop-filter: blur(3px);
+  background-color: rgb(0 0 0 / 60%);
+
+  font-family: "Open sans";
+
+  opacity: 1;
+
+  transition: 0.3s all ease-out;
+}
+
+.inscription-programme.active {
+  display: flex;
+}
+
+.inscription-programme .programme-inscription-container {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  display: flex;
+
+  box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.349);
+  border-radius: 5px;
+}
+
+/* Inscription */
+.inscription {
+  width: 100%;
+}
+
+.inscription label {
+  user-select: none;
+}
+
+.inscription .form-inscription {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 5px;
+}
+
+.inscription .form-inscription span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inscription .form-inscription span a {
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.inscription .form-inscription span a:hover {
+  text-decoration: underline;
+}
+
+.inscription .form-inscription h1 {
+  margin-top: 0;
+
+  margin-bottom: 10px;
+}
+
+.inscription .form-inscription input[type="text"],
+input[type="email"] {
+  padding: 10px;
+
+  border: none;
+
+  background-color: rgba(128, 128, 128, 0.068);
+
+  border-radius: 30px;
+
+  outline: none;
+
+  margin-bottom: 10px;
+}
+
+.inscription .form-inscription textarea {
+  resize: none;
+
+  border: none;
+
+  background-color: rgba(128, 128, 128, 0.068);
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 1rem;
+
+  padding: 10px;
+}
+
+.inscription .form-inscription .valider-inscription {
+  border: none;
+  color: white;
+
+  background-color: rgb(73, 109, 185);
+  padding: 10px 25px 10px 25px;
+
+  margin-top: 10px;
+
+  font-weight: bold;
+
+  border-radius: 10px;
+
+  width: 50%;
+
+  margin-left: auto;
+
+  cursor: pointer;
+}
+
+/* Programme */
+.programme {
+  background-color: white;
+
+  background-color: white;
+  width: 60%;
+
+  padding: 30px;
+
+  border-radius: 5px;
+
+  margin-right: 5px;
+}
+
+.programme ul {
+  margin-top: 5px;
+}
+
+.programme li {
+  padding: 15px;
+}
+
+@media (max-width: 1100px) {
+  .programme {
+    display: none;
+  }
+}
